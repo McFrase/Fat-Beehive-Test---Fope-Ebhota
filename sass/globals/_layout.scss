@@ -1,8 +1,8 @@
-@use "./color" as g;
+@use "./color" as c; //making use of colors by bringing in the color partial, declaring it's usage as "C" which stands for color
 
 .container {
   width: 100%;
-  background-color: g.$bg-color;
+  background-color: c.$bg-color;
   margin: 0 auto;
   padding: 2.1875rem 3.4375rem 2.875rem 3.125rem;
   position: relative;
@@ -17,22 +17,22 @@
 .flex {
   display: flex;
   flex-direction: column;
+}
 
-  &__justify__between {
-    justify-content: space-between;
-  }
+.flex__justify__between {
+  justify-content: space-between;
+}
 
-  &__align__center {
-    align-items: start;
-  }
+.flex__align__center {
+  align-items: start;
+}
 
-  &--gap--20 {
-    gap: 1.25rem;
-  }
+.flex--gap--20 {
+  gap: 1.25rem;
+}
 
-  &--gap--32 {
-    gap: 2rem;
-  }
+.flex--gap--32 {
+  gap: 2rem;
 }
 
 .pattern {
@@ -51,6 +51,13 @@
   margin-bottom: 20px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
 @media screen and (min-width: 80rem) {
   .container {
     width: 80rem;
@@ -59,24 +66,13 @@
 
   .flex {
     flex-direction: row;
-
-    &__align__center {
-      align-items: center;
-    }
-  }
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 20px;
-
-  @media screen and (min-width: 48rem) {
-    grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (min-width: 80rem) {
+  .flex__align__center {
+    align-items: center;
+  }
+
+  .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

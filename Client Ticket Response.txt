@@ -1,0 +1,12 @@
+Hi Bob,
+
+Thank you for bringing this to our attention.
+
+We have updated the page to make it responsive, so it now looks good on both larger screens and iPhones. The issue you noticed was due to the layout not adjusting properly for smaller screens, which caused the books to display inconsistently.
+
+We have made sure that on iPhones, the books now appear one per row, as requested.
+
+Feel free to check it out and let us know if everything looks good on your end.
+
+Best regards,
+Fope

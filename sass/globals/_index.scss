@@ -1,6 +1,6 @@
-@forward "boilerplate";
-@forward "buttons";
-@forward "cards";
-@forward "color";
-@forward "font";
-@forward "layout";
+@forward "boilerplate"; //To style basic html elements
+@forward "buttons"; //This is to style buttons
+@forward "cards"; //This is to style cards
+@forward "color"; //This is where colors are declared
+@forward "font"; //This controls all font related elements on the project
+@forward "layout"; //This is for container, grids, flexbox layouts

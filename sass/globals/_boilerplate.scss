@@ -1,5 +1,5 @@
-@use "./font" as f;
-@use "./color" as c;
+@use "./font" as f; //making use of fonts by bringing in the font partial, declaring it's usage as "F" which stands for Font
+@use "./color" as c; //making use of colors by bringing in the color partial, declaring it's usage as "C" which stands for color
 
 html {
   box-sizing: border-box;
