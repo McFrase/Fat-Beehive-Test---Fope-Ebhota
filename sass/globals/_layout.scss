@@ -6,6 +6,7 @@
   margin: 0 auto;
   padding: 2.1875rem 3.4375rem 2.875rem 3.125rem;
   position: relative;
+  overflow: hidden;
 }
 
 .container__aside,
@@ -25,6 +26,10 @@
 
 .flex__align__center {
   align-items: start;
+}
+
+.flex--gap--lg {
+  gap: 1.25rem;
 }
 
 .flex--gap--20 {
@@ -66,6 +71,10 @@
 
   .flex {
     flex-direction: row;
+  }
+
+  .flex--gap--lg {
+    gap: 19.5rem;
   }
 
   .flex__align__center {

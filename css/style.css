@@ -17,14 +17,14 @@
   font-display: swap;
 }
 .copy-large {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 300;
 }
 
 .heading-large {
-  font-size: 2.75rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 51.66px;
+  line-height: 39.66px;
 }
 
 @media screen and (min-width: 80rem) {
@@ -34,6 +34,13 @@
     top: 40%;
     transform: translate(-50%, -40%) rotate(90deg);
     white-space: nowrap;
+  }
+  .copy-large {
+    font-size: 1.25rem;
+  }
+  .heading-large {
+    font-size: 2.75rem;
+    line-height: 3.22875rem;
   }
 }
 html {
@@ -58,13 +65,18 @@ a:active {
 }
 
 .button {
-  padding: 1.25rem 2.5rem;
+  padding: 0.625rem 1.25rem;
   border-radius: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 80rem) {
+  .button {
+    padding: 1.25rem 2.5rem;
+  }
 }
 
 .button__anim {
@@ -186,20 +198,30 @@ a:active {
 }
 
 .card__text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 23.4px;
   color: #202020;
 }
+@media screen and (min-width: 80rem) {
+  .card__text {
+    font-size: 1.125rem;
+  }
+}
 
 .card__button {
-  padding: 1.25rem 2.5rem;
+  padding: 0.625rem 1.25rem;
   border-radius: 2.5rem;
   display: flex;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 21.13px;
   letter-spacing: 0.01em;
+}
+@media screen and (min-width: 80rem) {
+  .card__button {
+    padding: 1.25rem 2.5rem;
+  }
 }
 
 .card__button--primary {
@@ -218,6 +240,7 @@ a:active {
   margin: 0 auto;
   padding: 2.1875rem 3.4375rem 2.875rem 3.125rem;
   position: relative;
+  overflow: hidden;
 }
 
 .container__aside,
@@ -237,6 +260,10 @@ a:active {
 
 .flex__align__center {
   align-items: start;
+}
+
+.flex--gap--lg {
+  gap: 1.25rem;
 }
 
 .flex--gap--20 {
@@ -276,6 +303,9 @@ a:active {
   }
   .flex {
     flex-direction: row;
+  }
+  .flex--gap--lg {
+    gap: 19.5rem;
   }
   .flex__align__center {
     align-items: center;

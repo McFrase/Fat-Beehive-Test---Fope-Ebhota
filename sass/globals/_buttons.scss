@@ -1,13 +1,17 @@
 @use "./color" as c; //making use of colors by bringing in the color partial, declaring it's usage as "C" which stands for color
 
 .button {
-  padding: 1.25rem 2.5rem;
+  padding: 0.625rem 1.25rem;
   border-radius: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+
+  @media screen and (min-width: 80rem) {
+    padding: 1.25rem 2.5rem;
+  }
 }
 
 .button__anim {
@@ -56,13 +60,3 @@
   border-radius: 2.5rem;
   background-color: c.$white;
 }
-
-// .button:hover {
-//   .button__overlay {
-//     bottom: 0;
-//   }
-
-//   .button__text {
-//     transform: scale(1.07);
-//   }
-// }
