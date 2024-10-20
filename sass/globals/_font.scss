@@ -1,15 +1,32 @@
 @font-face {
   font-family: "Raleway";
-  src: url("/assets/fonts/raleway-variablefont_wght-webfont.woff2")
-      format("woff2"),
-    url("/assets/fonts/raleway-variablefont_wght-webfont.woff") format("woff");
-  font-weight: normal;
+  src: url("/assets/fonts/Raleway-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway-Light.woff2") format("woff2"),
+    url("/assets/fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Raleway-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
 }
 
 $font: "Raleway", serif;
 
 .copy-large {
   font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .heading-large {
@@ -24,6 +41,7 @@ $font: "Raleway", serif;
     left: 50%;
     top: 40%;
     transform: translate(-50%, -40%) rotate(90deg);
-    text-wrap: nowrap;
+    // text-wrap: nowrap;
+    white-space: nowrap;
   }
 }

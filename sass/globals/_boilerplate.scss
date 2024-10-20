@@ -1,9 +1,11 @@
 @use "./font" as f;
+@use "./color" as c;
 
 html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: f.$font;
+  color: c.$black;
 }
 
 *,
