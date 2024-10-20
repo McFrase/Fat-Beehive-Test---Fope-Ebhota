@@ -1,9 +1,9 @@
-@use "../util" as u;
+@use "./font" as f;
 
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: u.$font;
+  font-family: f.$font;
 }
 
 *,
@@ -12,4 +12,10 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
 }

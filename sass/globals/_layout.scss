@@ -1,0 +1,82 @@
+@use "./color" as g;
+
+.container {
+  width: 100%;
+  background-color: g.$bg-color;
+  margin: 0 auto;
+  padding: 2.1875rem 3.4375rem 2.875rem 3.125rem;
+  position: relative;
+}
+
+.container__aside,
+.container__main {
+  z-index: 1;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  &__justify__between {
+    justify-content: space-between;
+  }
+
+  &__align__center {
+    align-items: start;
+  }
+
+  &--gap--20 {
+    gap: 1.25rem;
+  }
+
+  &--gap--32 {
+    gap: 2rem;
+  }
+}
+
+.pattern {
+  position: absolute;
+  right: -32px;
+  bottom: -83px;
+  z-index: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 80rem) {
+  .container {
+    width: 80rem;
+    padding: 4.375rem 6.875rem 5.75rem 6.25rem;
+  }
+
+  .flex {
+    flex-direction: row;
+
+    &__align__center {
+      align-items: center;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+
+  @media screen and (min-width: 48rem) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 80rem) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

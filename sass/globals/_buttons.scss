@@ -1,0 +1,45 @@
+@use "./color" as c;
+
+.button {
+  padding: 1.25rem 2.5rem;
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  &--primary {
+    background-color: c.$primary;
+    color: c.$white;
+  }
+
+  &__text {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 21.13px;
+    letter-spacing: 0.01em;
+    transition: all 0.25s ease-in;
+    z-index: 2;
+  }
+
+  .button__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    left: 0;
+    transition: all 0.25s ease-in;
+    border-radius: 2.5rem;
+    background-color: c.$black;
+  }
+
+  &:hover {
+    .button__overlay {
+      bottom: 0;
+    }
+
+    .button__text {
+      transform: scale(1.07);
+    }
+  }
+}
