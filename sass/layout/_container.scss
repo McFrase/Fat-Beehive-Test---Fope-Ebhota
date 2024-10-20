@@ -1,0 +1,26 @@
+@use "../globals" as g;
+
+.container {
+  max-width: 80rem;
+  width: 100%;
+  background-color: g.$bg-color;
+  margin: 0 auto;
+  padding: 4.375rem 6.875rem 5.75rem 6.25rem;
+}
+
+.flex {
+  display: flex;
+
+  &__justify__between {
+    justify-content: space-between;
+    gap: 19.688rem;
+  }
+
+  &__align__center {
+    align-items: center;
+  }
+
+  &--gap--20 {
+    gap: 1.25rem;
+  }
+}
